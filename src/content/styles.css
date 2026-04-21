@@ -1,0 +1,48 @@
+.dudu-translation {
+  display: inline;
+  margin-left: 0.25em;
+  color: inherit;
+  opacity: 0.92;
+  text-decoration: underline dashed currentColor;
+  text-underline-offset: 3px;
+  contain: layout;
+}
+
+.dudu-translation[style*='display: block'] {
+  margin-left: 0;
+  margin-top: 0.25em;
+}
+
+html[data-dudu-style='highlight'] .dudu-translation {
+  background: rgba(20, 184, 166, 0.12);
+  text-decoration: none;
+  border-radius: 3px;
+  padding: 0 2px;
+}
+
+html[data-dudu-style='none'] .dudu-translation {
+  text-decoration: none;
+}
+
+html[data-dudu-style='underline'] .dudu-translation {
+  text-decoration: underline solid currentColor;
+}
+
+.dudu-ui-translated {
+  transition: none;
+}
+
+.dudu-toast {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  background: #111827;
+  color: #f9fafb;
+  font-size: 13px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  z-index: 2147483647;
+  font-family: system-ui, -apple-system, sans-serif;
+  pointer-events: none;
+}
