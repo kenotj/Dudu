@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Dudu Translate — a cute teal owl reading a book">
+  <title>Dudu Translate</title>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7FB5B0"/>
+      <stop offset="1" stop-color="#5E9691"/>
+    </linearGradient>
+    <linearGradient id="owl" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F6E6C6"/>
+      <stop offset="1" stop-color="#E7D0A8"/>
+    </linearGradient>
+    <linearGradient id="book" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3F7A75"/>
+      <stop offset="1" stop-color="#2F605C"/>
+    </linearGradient>
+    <radialGradient id="pupil" cx="0.4" cy="0.4" r="0.7">
+      <stop offset="0" stop-color="#7A4A2A"/>
+      <stop offset="1" stop-color="#3B2212"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Rounded tile background -->
+  <rect x="24" y="24" width="464" height="464" rx="96" ry="96" fill="url(#bg)"/>
+
+  <!-- Owl body -->
+  <g>
+    <!-- Body -->
+    <ellipse cx="256" cy="250" rx="150" ry="160" fill="url(#owl)"/>
+    <!-- Ear tufts -->
+    <path d="M145 135 Q150 100 175 105 Q170 135 160 150 Z" fill="url(#owl)"/>
+    <path d="M367 135 Q362 100 337 105 Q342 135 352 150 Z" fill="url(#owl)"/>
+    <!-- Forehead feather swirls -->
+    <g stroke="#D9BF8F" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.8">
+      <path d="M218 175 Q235 165 252 175"/>
+      <path d="M260 175 Q277 165 294 175"/>
+      <path d="M238 195 Q256 185 274 195"/>
+    </g>
+
+    <!-- Eyes -->
+    <g>
+      <!-- Left eye outer ring -->
+      <circle cx="207" cy="245" r="52" fill="#FBF3DF"/>
+      <circle cx="207" cy="245" r="52" fill="none" stroke="#E7D0A8" stroke-width="3"/>
+      <!-- Right eye outer ring -->
+      <circle cx="305" cy="245" r="52" fill="#FBF3DF"/>
+      <circle cx="305" cy="245" r="52" fill="none" stroke="#E7D0A8" stroke-width="3"/>
+      <!-- Pupils -->
+      <circle cx="211" cy="248" r="28" fill="url(#pupil)"/>
+      <circle cx="301" cy="248" r="28" fill="url(#pupil)"/>
+      <!-- Highlights -->
+      <circle cx="202" cy="238" r="8" fill="#FFFFFF"/>
+      <circle cx="292" cy="238" r="8" fill="#FFFFFF"/>
+      <circle cx="220" cy="258" r="3" fill="#FFFFFF" opacity="0.8"/>
+      <circle cx="310" cy="258" r="3" fill="#FFFFFF" opacity="0.8"/>
+    </g>
+
+    <!-- Cheeks -->
+    <circle cx="165" cy="300" r="14" fill="#F5B082" opacity="0.75"/>
+    <circle cx="347" cy="300" r="14" fill="#F5B082" opacity="0.75"/>
+
+    <!-- Beak -->
+    <path d="M246 292 L266 292 L256 314 Z" fill="#F5B082" stroke="#D9925E" stroke-width="2" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Book (open, in front of owl lower body) -->
+  <g>
+    <!-- Book shadow -->
+    <ellipse cx="256" cy="438" rx="170" ry="10" fill="#000" opacity="0.15"/>
+
+    <!-- Open pages -->
+    <path d="M110 348 Q180 332 256 348 Q332 332 402 348 L402 432 Q332 418 256 432 Q180 418 110 432 Z"
+          fill="#FBF3DF" stroke="#D9BF8F" stroke-width="2"/>
+    <!-- Page fold line -->
+    <path d="M256 348 L256 432" stroke="#D9BF8F" stroke-width="2" opacity="0.7"/>
+
+    <!-- Cover (front band with title) -->
+    <path d="M96 370 Q256 352 416 370 L416 438 Q256 420 96 438 Z" fill="url(#book)"/>
+    <path d="M96 370 Q256 352 416 370" fill="none" stroke="#244D49" stroke-width="2" opacity="0.5"/>
+
+    <!-- Bookmark ribbon -->
+    <path d="M388 352 L408 352 L408 418 L398 408 L388 418 Z" fill="#F5B082" stroke="#D9925E" stroke-width="1.5" stroke-linejoin="round"/>
+
+    <!-- Title "Dudu" -->
+    <g font-family="'Nunito','Quicksand','Baloo 2','Helvetica Neue',system-ui,sans-serif"
+       font-weight="800" font-size="58" fill="#FBF3DF" text-anchor="middle">
+      <text x="256" y="416" letter-spacing="2">Dudu</text>
+    </g>
+
+    <!-- Little feet peeking under the book -->
+    <g fill="#F5B082" stroke="#D9925E" stroke-width="1.5" stroke-linejoin="round">
+      <path d="M196 438 q-4 10 -14 10 q10 2 14 -4 q4 6 14 4 q-10 0 -14 -10 Z"/>
+      <path d="M316 438 q-4 10 -14 10 q10 2 14 -4 q4 6 14 4 q-10 0 -14 -10 Z"/>
+    </g>
+  </g>
+
+  <!-- Tiny decorative 读 echo in the corner for the Chinese pun (very subtle) -->
+  <g opacity="0.18" font-family="'PingFang SC','Hiragino Sans GB','Noto Sans SC',sans-serif"
+     font-size="52" fill="#FBF3DF" text-anchor="end">
+    <text x="468" y="488">读读</text>
+  </g>
+</svg>
