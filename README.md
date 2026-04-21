@@ -52,6 +52,17 @@ Most browser translators either replace every word and wreck the layout, or tuck
 
 ## 🚀 Install
 
+### Option A — download a prebuilt zip (easiest)
+
+Grab the latest zip from [`releases/`](./releases/) — e.g.
+[`dudu-translate-v0.1.0.zip`](./releases/dudu-translate-v0.1.0.zip).
+
+1. Unzip anywhere.
+2. Open `chrome://extensions` and enable **Developer mode**.
+3. Click **Load unpacked** and pick the unzipped folder.
+
+### Option B — build from source
+
 ```bash
 npm install
 npm run build
